@@ -49,11 +49,11 @@ def clean_urls(file_path):
 def main():
     cls()
     print_logo()
-    file_path = input(f"{y}Enter the path to your urls.txt file: ").strip()
+    file_path = input(f"{y}Path to your urls.txt file: ").strip()
     if os.path.isfile(file_path):
         clean_urls(file_path)
     else:
-        print(f"{r}Invalid file path. Please try again.")
+        print(f"{r}Invalid file path :(")
 
 if __name__ == "__main__":
     main()
